@@ -3,7 +3,18 @@ export default defineNuxtConfig({
   modules: [
     ['unplugin-deploy-info/nuxt',{
       info:[
-       { name:'Vite', message:'https://vitejs.dev/'}
+        {
+          name:'Vite',
+          message:'https://vitejs.dev/'
+        },
+        {
+          name:'outline',
+          message:'Vue',
+          messageStyle:{
+            color:'green'
+          },
+          isUrlMessage: false
+        }
       ]
     }]
   ],

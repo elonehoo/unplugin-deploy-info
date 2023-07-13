@@ -36,16 +36,6 @@
       "require": "./dist/webpack.cjs",
       "import": "./dist/webpack.js"
     },
-    "./rollup": {
-      "types": "./dist/rollup.d.ts",
-      "require": "./dist/rollup.cjs",
-      "import": "./dist/rollup.js"
-    },
-    "./esbuild": {
-      "types": "./dist/esbuild.d.ts",
-      "require": "./dist/esbuild.cjs",
-      "import": "./dist/esbuild.js"
-    },
     "./nuxt": {
       "types": "./dist/nuxt.d.ts",
       "require": "./dist/nuxt.cjs",
@@ -76,7 +66,7 @@
     "dev": "tsup --watch src",
     "build": "tsup",
     "build:fix": "tsx scripts/postbuild.ts",
-    "play:vue": "pnpm -C playground/vue run dev",
+    "play:vite": "pnpm -C playground/vite run dev",
     "play:nuxt": "pnpm -C playground/nuxt run dev",
     "prepublishOnly": "npm run build",
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public",

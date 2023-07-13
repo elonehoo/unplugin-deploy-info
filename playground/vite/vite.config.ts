@@ -10,7 +10,15 @@ export default defineConfig({
       info:[
         {
           name:'Vite',
-          message:'https://vitejs.dev/',
+          message:'https://vitejs.dev/'
+        },
+        {
+          name:'outline',
+          message:'Vue',
+          messageStyle:{
+            color:'green'
+          },
+          isUrlMessage: false
         }
       ]
     })

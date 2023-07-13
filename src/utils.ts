@@ -42,21 +42,6 @@ export function getInfoViteItem(infoItem: Item){
 }
 
 export function getInfoNuxtItem(infoItem: Item){
-  const urlRegexp = /^(https?:\/\/)?[\w\-]+(\.[\w\-]+)+[/#?]?.*$/
-
-  let colorizedMessage = infoItem.message
-  if (
-    infoItem.isUrlMessage === true
-      || (infoItem.isUrlMessage === undefined && urlRegexp.test(infoItem.message))
-  ) {
-    colorizedMessage = kolorist.cyan(
-      infoItem.message.replaceAll(/(\d+)/g, (_, port) => `${kolorist.bold(port)}`),
-    )
-  }
-  else {
-    colorizedMessage = colorize(infoItem.message, infoItem.messageStyle)
-  }
-
-  // return `  ${kolorist.green('➜')}  ${kolorist.bold(infoItem.name)}: ${colorizedMessage}`
-  return `  > ${infoItem.name}: ${colorizedMessage}\n`
+  const colorizedMessage = getInfoItem(infoItem)
+  return `  > ${infoItem.name}: ${colorizedMessage}`
 }
