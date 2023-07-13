@@ -1,0 +1,108 @@
+{
+  "name": "unplugin-deploy-info",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Starter template for unplugin",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
+  "homepage": "https://github.com/elonehoo/starter-unplugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elonehoo/starter-unplugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elonehoo/starter-unplugin/issues"
+  },
+  "keywords": [
+    "unplugin",
+    "vite",
+    "webpack",
+    "rollup",
+    "transform"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "require": "./dist/vite.cjs",
+      "import": "./dist/vite.js"
+    },
+    "./webpack": {
+      "types": "./dist/webpack.d.ts",
+      "require": "./dist/webpack.cjs",
+      "import": "./dist/webpack.js"
+    },
+    "./rollup": {
+      "types": "./dist/rollup.d.ts",
+      "require": "./dist/rollup.cjs",
+      "import": "./dist/rollup.js"
+    },
+    "./esbuild": {
+      "types": "./dist/esbuild.d.ts",
+      "require": "./dist/esbuild.cjs",
+      "import": "./dist/esbuild.js"
+    },
+    "./nuxt": {
+      "types": "./dist/nuxt.d.ts",
+      "require": "./dist/nuxt.cjs",
+      "import": "./dist/nuxt.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "require": "./dist/types.cjs",
+      "import": "./dist/types.js"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch src",
+    "build": "tsup",
+    "build:fix": "tsx scripts/postbuild.ts",
+    "play:vue": "pnpm -C playground/vue run dev",
+    "play:nuxt": "pnpm -C playground/nuxt run dev",
+    "prepublishOnly": "npm run build",
+    "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "kolorist": "^1.8.0",
+    "unplugin": "^1.3.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.7",
+    "@types/node": "^20.4.2",
+    "@vitest/ui": "^0.33.0",
+    "bumpp": "^9.1.1",
+    "chalk": "^5.3.0",
+    "eslint": "^8.44.0",
+    "fast-glob": "^3.3.0",
+    "rollup": "^3.26.2",
+    "tsup": "^7.1.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.3",
+    "vitest": "^0.33.0",
+    "webpack": "^5.88.1"
+  }
+}
