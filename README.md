@@ -1,32 +1,54 @@
-# starter-unplugin
+# unplugin-deploy-info
 
-[![NPM version](https://img.shields.io/npm/v/@elonehoo/starter-unplugin?color=a1b858&label=)](https://www.npmjs.com/package/@elonehoo/starter-unplugin)
+> print some help info like vite builtin
 
-Starter template for unplugin
-
-## Try it now!
-
-### GitHub Template
-
-[Create a repo from this template on GitHub](https://github.com/elonehoo/starter-ts/generate).
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
+## Install
 
 ```bash
-sudo npx degit elonehoo/starter-unplugin my-unplugin-app
-cd my-unplugin-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+npm i -D unplugin-deploy-info
 ```
 
-## Checklist
 
-When you use this template, try follow the checklist to update your info properly
+<details>
+<summary>Vite</summary><br>
 
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the package name in `package.json` and package info
-- [ ] Remove the `.github` folder which contains the funding info
-- [ ] Clean up the README
+```ts
+// vite.config.ts
+import DeployInfo from 'unplugin-deploy-info/vite'
 
-And, enjoy :)
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    DeployInfo({
+      /* options */
+    })
+  ],
+})
+```
+
+Example: [`playground/vite`](./playground/vite)
+
+<br></details>
+
+<details>
+<summary>Nuxt</summary><br>
+
+```ts
+// nuxt.config.ts
+export default defineNuxtConfig({
+  modules: [
+    ['unplugin-deploy-info/nuxt',{
+      /* options */
+    }]
+  ]
+})
+
+```
+
+Example: [`playground/nuxt`](./playground/nuxt)
+
+<br></details>
+
+## License
+MIT License © 2023 [Elone Hoo](https://github.com/elonehoo)
