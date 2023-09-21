@@ -1,22 +1,22 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    ['unplugin-deploy-info/nuxt',{
-      info:[
+    ['unplugin-deploy-info/nuxt', {
+      info: [
         {
-          name:'Vite',
-          message:'https://vitejs.dev/'
+          name: 'Vite',
+          message: 'https://vitejs.dev/',
         },
         {
-          name:'outline',
-          message:'Vue',
-          messageStyle:{
-            color:'green'
+          name: 'outline',
+          message: 'Vue',
+          messageStyle: {
+            color: 'green',
           },
-          isUrlMessage: false
-        }
-      ]
-    }]
+          isUrlMessage: false,
+        },
+      ],
+    }],
   ],
   devtools: { enabled: false },
 })

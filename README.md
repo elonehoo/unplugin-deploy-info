@@ -16,7 +16,6 @@ npm i -D unplugin-deploy-info
 // vite.config.ts
 import DeployInfo from 'unplugin-deploy-info/vite'
 
-
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -38,12 +37,11 @@ Example: [`playground/vite`](./playground/vite)
 // nuxt.config.ts
 export default defineNuxtConfig({
   modules: [
-    ['unplugin-deploy-info/nuxt',{
+    ['unplugin-deploy-info/nuxt', {
       /* options */
     }]
   ]
 })
-
 ```
 
 Example: [`playground/nuxt`](./playground/nuxt)

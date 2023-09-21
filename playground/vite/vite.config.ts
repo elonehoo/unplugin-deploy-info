@@ -7,20 +7,20 @@ export default defineConfig({
   plugins: [
     vue(),
     DeployInfo({
-      info:[
+      info: [
         {
-          name:'Vite',
-          message:'https://vitejs.dev/'
+          name: 'Vite',
+          message: 'https://vitejs.dev/',
         },
         {
-          name:'outline',
-          message:'Vue',
-          messageStyle:{
-            color:'green'
+          name: 'outline',
+          message: 'Vue',
+          messageStyle: {
+            color: 'green',
           },
-          isUrlMessage: false
-        }
-      ]
-    })
+          isUrlMessage: false,
+        },
+      ],
+    }),
   ],
 })

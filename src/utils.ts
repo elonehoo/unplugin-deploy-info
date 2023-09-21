@@ -36,12 +36,12 @@ export function getInfoItem(infoItem: Item) {
   return colorizedMessage
 }
 
-export function getInfoViteItem(infoItem: Item){
+export function getInfoViteItem(infoItem: Item) {
   const colorizedMessage = getInfoItem(infoItem)
   return `  ${kolorist.green('➜')}  ${kolorist.bold(infoItem.name)}: ${colorizedMessage}`
 }
 
-export function getInfoNuxtItem(infoItem: Item){
+export function getInfoNuxtItem(infoItem: Item) {
   const colorizedMessage = getInfoItem(infoItem)
   return `  > ${infoItem.name}: ${colorizedMessage}`
 }

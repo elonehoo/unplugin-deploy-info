@@ -4,9 +4,9 @@ import { getInfoViteItem } from './utils'
 
 export default createUnplugin<Options>(options => ({
   name: 'unplugin-deploy-info',
-  enforce:'pre',
-  vite:{
-    configureServer(server){
+  enforce: 'pre',
+  vite: {
+    configureServer(server) {
       const _printUrls = server.printUrls
       server.printUrls = () => {
         _printUrls()
@@ -14,6 +14,6 @@ export default createUnplugin<Options>(options => ({
           /* eslint-disable no-console */
           console.info(getInfoViteItem(infoItem))
       }
-    }
+    },
   },
 }))
