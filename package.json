@@ -1,7 +1,7 @@
 {
   "name": "unplugin-deploy-info",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "print some help info like vite builtin",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",
