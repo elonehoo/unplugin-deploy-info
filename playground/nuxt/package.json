@@ -12,8 +12,8 @@
     "unplugin-deploy-info": "laster"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.4",
-    "@types/node": "^20.6.3",
-    "nuxt": "^3.7.3"
+    "@nuxt/devtools": "^0.8.5",
+    "@types/node": "^20.8.0",
+    "nuxt": "^3.7.4"
   }
 }
