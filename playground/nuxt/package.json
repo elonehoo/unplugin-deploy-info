@@ -9,11 +9,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "unplugin-deploy-info": "laster"
+    "unplugin-deploy-info": "workspace:^"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.8.5",
-    "@types/node": "^20.8.0",
-    "nuxt": "^3.7.4"
+    "@nuxt/devtools": "^1.0.2",
+    "@types/node": "^20.9.0",
+    "nuxt": "^3.8.1"
   }
 }
