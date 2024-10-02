@@ -12,8 +12,8 @@
     "unplugin-deploy-info": "workspace:^"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.5.0",
-    "@types/node": "^22.5.5",
+    "@nuxt/devtools": "^1.5.1",
+    "@types/node": "^22.7.4",
     "nuxt": "^3.13.2"
   }
 }
