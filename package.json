@@ -77,7 +77,7 @@
   },
   "dependencies": {
     "kolorist": "^1.8.0",
-    "unplugin": "^1.16.0"
+    "unplugin": "^2.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.11.2",
