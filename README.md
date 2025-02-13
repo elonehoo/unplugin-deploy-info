@@ -8,7 +8,6 @@
 npm i -D unplugin-deploy-info
 ```
 
-
 <details>
 <summary>Vite</summary><br>
 

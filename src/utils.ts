@@ -1,5 +1,5 @@
-import * as kolorist from 'kolorist'
 import type { Item, Style } from './types'
+import * as kolorist from 'kolorist'
 
 function colorize(str: string, style?: Partial<Style>) {
   if (style?.color)
@@ -18,12 +18,12 @@ function colorize(str: string, style?: Partial<Style>) {
 }
 
 export function getInfoItem(infoItem: Item) {
-  const urlRegexp = /^(https?:\/\/)?[\w\-]+(\.[\w\-]+)+[/#?]?.*$/
+  const urlRegexp = /^(https?:\/\/)?[\w\-]+(\.[\w\-]+)+.*$/
 
   let colorizedMessage = infoItem.message
   if (
     infoItem.isUrlMessage === true
-      || (infoItem.isUrlMessage === undefined && urlRegexp.test(infoItem.message))
+    || (infoItem.isUrlMessage === undefined && urlRegexp.test(infoItem.message))
   ) {
     colorizedMessage = kolorist.cyan(
       infoItem.message.replaceAll(/(\d+)/g, (_, port) => `${kolorist.bold(port)}`),

@@ -1,5 +1,5 @@
-import { createUnplugin } from 'unplugin'
 import type { Options } from './types'
+import { createUnplugin } from 'unplugin'
 import { getInfoViteItem } from './utils'
 
 export default createUnplugin<Options>(options => ({

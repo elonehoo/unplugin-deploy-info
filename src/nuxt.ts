@@ -1,6 +1,6 @@
 import type { Options } from './types'
-import { getInfoNuxtItem } from './utils'
 import unplugin from '.'
+import { getInfoNuxtItem } from './utils'
 
 export default function (options: Options, nuxt: any) {
   // install vite plugin
