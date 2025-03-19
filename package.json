@@ -77,22 +77,22 @@
   },
   "dependencies": {
     "kolorist": "^1.8.0",
-    "unplugin": "^2.2.0"
+    "unplugin": "^2.2.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.3.0",
-    "@types/node": "^22.13.4",
-    "@vitest/ui": "^3.0.6",
-    "bumpp": "^10.0.3",
+    "@antfu/eslint-config": "^4.10.1",
+    "@types/node": "^22.13.10",
+    "@vitest/ui": "^3.0.9",
+    "bumpp": "^10.1.0",
     "chalk": "^5.4.1",
-    "eslint": "^9.20.1",
+    "eslint": "^9.22.0",
     "fast-glob": "^3.3.3",
-    "rollup": "^4.34.8",
-    "tsup": "^8.3.6",
+    "rollup": "^4.36.0",
+    "tsup": "^8.4.0",
     "tsx": "^4.19.3",
-    "typescript": "^5.7.3",
-    "vite": "^6.1.0",
-    "vitest": "^3.0.6",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.2",
+    "vitest": "^3.0.9",
     "webpack": "^5.98.0"
   }
 }
